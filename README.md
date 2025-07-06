@@ -1,16 +1,69 @@
-# redfi
+# ✈️ RideFi — Flight Search & Booking App
 
-A new Flutter project.
+A Flutter application for searching flights, applying filters, and booking tickets — with a clean, modern UI.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📋 Overview
 
-A few resources to get you started if this is your first Flutter project:
+RideFi helps users search and book flights, apply filters (like direct flights, travel class), and keep track of their favorite flights.  
+Built with **Flutter**, leveraging its declarative UI, and standard state management.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+
+
+---
+
+## 🚀 Features
+
+- **Flight Search**: Search flights by origin, destination, date, and passengers  
+- **Flight Filters**: Filter by direct flights, travel class, etc.  
+- **Favorites**: Save and view favorite flights  
+- **Onboarding**: Intro screens for first-time users  
+- **Responsive UI**: Works well on various screen sizes  
+- **Local Storage**: Uses SharedPreferences for saving favorites  
+
+---
+
+## 🏗 Architecture
+
+Built using clean, modular architecture with standard **Flutter best practices**.
+
+### Highlights:
+- **State Management**: Basic stateful widgets & ChangeNotifier
+- **Routing**: Centralized app router
+- **Persistence**: SharedPreferences for lightweight storage
+- **Separation of Concerns**: Clear split between domain, data, and presentation layers
+
+---
+
+## 📁 Project Structure
+lib/
+├── features/
+│ ├── flight_search/ # Search UI, filters, domain logic
+│ ├── flight_result/ # Flight result display
+│ └── widget/ # Reusable widgets
+├── starter/ # Onboarding logic & screens
+├── utils/ # Utilities, custom widgets, helpers
+├── router/ # App routing
+└── main.dart
+
+## ⚙️ Setup Instructions
+
+### Requirements
+- Flutter SDK >=3.0
+- Dart >=2.17
+- Android Studio / VS Code
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd ridefi
+
+# Install dependencies
+flutter pub get
