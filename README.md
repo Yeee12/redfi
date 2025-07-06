@@ -13,6 +13,10 @@ Built with **Flutter**, leveraging its declarative UI, and standard state manage
 
 ## 📸 Screenshots
 
+![home page](https://github.com/user-attachments/assets/b69bc3a5-9a38-4937-8b1f-81c17f7b55f9)
+![search page](https://github.com/user-attachments/assets/0842b079-9752-488a-a7e9-5db681705704)
+![result page](https://github.com/user-attachments/assets/b40800cc-e0b7-4f86-9061-28ab2dfe2ee9)
+
 
 
 ---
@@ -33,7 +37,7 @@ Built with **Flutter**, leveraging its declarative UI, and standard state manage
 Built using clean, modular architecture with standard **Flutter best practices**.
 
 ### Highlights:
-- **State Management**: Basic stateful widgets & ChangeNotifier
+- **State Management**: Basic stateful widgets & ChangeNotifier with riverpod 
 - **Routing**: Centralized app router
 - **Persistence**: SharedPreferences for lightweight storage
 - **Separation of Concerns**: Clear split between domain, data, and presentation layers
@@ -67,3 +71,11 @@ cd ridefi
 
 # Install dependencies
 flutter pub get
+
+Run on a device
+flutter run
+# Debug APK
+flutter build apk --debug
+
+# Release APK
+flutter build apk --release
